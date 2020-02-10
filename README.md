@@ -8,7 +8,7 @@ database_mssql ==> Database mysql
 
  ใน config.php  
  -$_svhost="sqlsrv";  Database MS sql
-  - $_svhost="mysql";  Database mysql
+ -$_svhost="mysql";  Database mysql
  
 Ex.
 		$_svhost="mysql";
