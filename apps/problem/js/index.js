@@ -61,7 +61,7 @@ $('#modalDelete').on('show.bs.modal', function(event) {
 
     $("#modalDelete .btn-continue").off();
     $("#modalDelete .btn-continue").on("click", function() {
-        window.location.href = "apps/status/do_status.php?action=delete&problem_id=" + problem_id
+        window.location.href = "apps/problem/do_problem.php?action=delete&problem_id=" + problem_id
     })
 })
 
