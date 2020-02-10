@@ -5,7 +5,7 @@ Introduction
 
 - database_mysql==> Database Mysql
 
-- database_mssql ==> Database MS sql 
+- database_mssql ==> Database MS sql V.2016
 
  ใน config.php  
  - $_svhost="sqlsrv";  Database MS sql
