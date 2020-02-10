@@ -1,6 +1,27 @@
 Introduction
 ============
 
+
+
+database_mysql==> Database MS sql
+database_mssql ==> Database mysql
+
+ ใน config.php  
+  = $_svhost="sqlsrv";  Database MS sql
+  = $_svhost="mysql";  Database mysql
+ 
+Ex.
+		$_svhost="mysql";
+		
+		"DB_type" => "mysql",
+        "DB_host" => "127.0.0.1",
+        "DB_name" => "system_repair",
+        "DB_user" => "root",
+        "DB_pass" => "root",
+        "DB_charset" => "utf8",
+		
+		
+
 [![Build Status](https://img.shields.io/travis/ColorlibHQ/AdminLTE/master.svg)](https://travis-ci.org/ColorlibHQ/AdminLTE)
 [![npm version](https://img.shields.io/npm/v/admin-lte/latest.svg)](https://www.npmjs.com/package/admin-lte)
 [![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)

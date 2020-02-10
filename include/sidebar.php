@@ -2,14 +2,18 @@
 $arr_users = array("users","users/add","users/edit");
 $arr_repair = array("repair","repair/add","repair/edit");
 $arr_dashboard = array("dashboard");
+$arr_charts = array("charts");
+$arr_calendar = array("calendar");
 $arr_system = array("system");
 
-$arr_settings = array("category","section","types","brand","osname","status","inventory", "inventory/add","inventory/edit");
+$arr_settings = array("category","section","types","brand","osname","status","problem","preventive","inventory", "inventory/add","inventory/edit");
 $arr_category = array("category");
 $arr_section = array("section");
 $arr_types = array("types");
+$arr_problem = array("problem");
 $arr_status = array("status");
 
+$arr_pm = array("preventive");
 $arr_osname = array("osname");
 
 $arr_brand = array("brand");
@@ -59,6 +63,22 @@ $arr_inventory = array("inventory","inventory/add","inventory/edit");
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
+            </p>
+          </a>
+        </li>  
+        <li class="nav-item">
+          <a href="?page=charts" class="nav-link <?php if(in_array($page, $arr_charts)){echo "active"; }?>">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>
+            Charts
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="?page=calendar" class="nav-link <?php if(in_array($page, $arr_calendar)){echo "active"; }?>">
+            <i class="nav-icon fas fa-calendar-alt"></i>
+            <p>
+            Calendar
             </p>
           </a>
         </li>
@@ -123,6 +143,18 @@ $arr_inventory = array("inventory","inventory/add","inventory/edit");
               <a href="?page=brand" class="nav-link <?php if(in_array($page, $arr_brand)){echo "active"; }?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Brand</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="?page=preventive" class="nav-link <?php if(in_array($page, $arr_pm)){echo "active"; }?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Preventive</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="?page=problem" class="nav-link <?php if(in_array($page, $arr_problem)){echo "active"; }?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Problem</p>
               </a>
             </li>
             <li class="nav-item">

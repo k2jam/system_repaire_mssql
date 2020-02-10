@@ -126,6 +126,27 @@ function fetch_all($fields, $table, $conditions = NULL , $req = NULL){
     return $data;
 }
 
+function fetch_query($_string = NULL , $req = NULL){
+    global $conn;
+    try{
+        $stmt = $conn->prepare(" $_string ");
+        if(!empty($req)){
+            foreach($req as $key => $v){
+                $stmt->bindParam(":".$key,$v);
+            }
+        }
+        $result = $stmt->execute();
+        $data = array();
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+          $data[] = $row;
+        }
+    }catch(PDOException $e){
+        echo "Error: " . $e->getMessage();
+        die();
+    }
+   
+    return $data;
+}
 
 
 function num_rows($table,$where=null){
