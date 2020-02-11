@@ -1,17 +1,19 @@
 Introduction
 ============
+*** php.ini
+- extension=pdo_mysql # For mysql
+- extension=php_pdo_sqlsrv_74_ts.dll # For ms sql
+- short_open_tag = On
 
-
-
+*** Database file 
 - database_mysql==> Database Mysql
-
 - database_mssql ==> Database MS sql V.2016
 
- ใน config.php  
+*** config.php  
  - $_svhost="sqlsrv";  Database MS sql
  - $_svhost="mysql";  Database mysql
  
-Ex.
+Ex. db Mysql
 		$_svhost="mysql";
 		
 		"DB_type" => "mysql",
@@ -20,7 +22,8 @@ Ex.
         "DB_user" => "root",
         "DB_pass" => "root",
         "DB_charset" => "utf8",
-		
+        
+*********************** Screenshot *******************************************
 		
 ![GitHub Logo](https://github.com/aka1526/system_repaire_mssql/blob/master/screenshot/p1.png)
 ![GitHub Logo](https://github.com/aka1526/system_repaire_mssql/blob/master/screenshot/p2.png)
