@@ -1,5 +1,11 @@
 Introduction
 ============
+/PHP_MSSQL_PDO  # โปรแกรมที่จำเป็นต้องใช้หาก ยังไม่ได้ติดตั้ง
+ - xampp-windows-x64-7.4.1-0-VC15-installer
+ - Driver php_pdo_sqlsrv ==> Windows-7.4 file  php_pdo_sqlsrv_74_ts.dll  
+       copy to C:\xampp\php\ext  ขึ้นอยู่กับว่าใช้ x86 หรือ 64 
+      
+ 
 *** php.ini
 - extension=pdo_mysql # For mysql
 - extension=php_pdo_sqlsrv_74_ts.dll # For ms sql
