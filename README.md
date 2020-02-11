@@ -22,6 +22,7 @@ Ex.
         "DB_charset" => "utf8",
 		
 		
+![GitHub Logo](https://github.com/aka1526/system_repaire_mssql/blob/master/screenshot/p1.png)
 
 [![Build Status](https://img.shields.io/travis/ColorlibHQ/AdminLTE/master.svg)](https://travis-ci.org/ColorlibHQ/AdminLTE)
 [![npm version](https://img.shields.io/npm/v/admin-lte/latest.svg)](https://www.npmjs.com/package/admin-lte)
