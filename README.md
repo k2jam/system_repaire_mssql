@@ -28,7 +28,10 @@ Introduction
         "DB_user" => "root",
         "DB_pass" => "root",
         "DB_charset" => "utf8",
-        
+    
+## LOGIN using
+username: admin 
+password: 123456
 ### *********************** Screenshot *******************************************
 		
 ![GitHub Logo](https://github.com/aka1526/system_repaire_mssql/blob/master/screenshot/p1.png)
